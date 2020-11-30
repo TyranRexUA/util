@@ -1,0 +1,414 @@
+@import url(../plugins//bootstrap//bootstrap.min.css);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box !important;
+  text-decoration: none;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+}
+
+html ::-webkit-scrollbar {
+  width: 7px;
+  height: 6px;
+}
+
+html ::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background: #1EC26D;
+}
+
+html ::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.header {
+  position: absolute;
+  top: 0;
+  z-index: 100;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.7) 70%, rgba(30, 194, 109, 0) 100%);
+}
+
+.header .logo span {
+  font-size: 20px;
+  color: #1EC26D;
+}
+
+.header a {
+  text-decoration: none;
+  color: black;
+}
+
+.carousel {
+  position: relative;
+}
+
+.carousel-inner {
+  height: 800px;
+}
+
+.carousel__text {
+  position: absolute;
+  top: 0%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  color: white;
+  background: rgba(255, 255, 255, 0.7);
+  background: linear-gradient(180deg, rgba(2, 0, 36, 0) 40%, rgba(86, 126, 105, 0.9) 90%);
+}
+
+@media (max-width: 500px) {
+  .carousel__text {
+    background: linear-gradient(180deg, rgba(2, 0, 36, 0) 20%, rgba(86, 126, 105, 0.9) 90%);
+  }
+}
+
+.carousel__text h1 {
+  margin-top: auto;
+}
+
+.carousel-item {
+  height: 100%;
+}
+
+.carousel-item img {
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
+}
+
+.services {
+  background-color: #1EC26D;
+}
+
+.services h2 {
+  color: white;
+}
+
+.services__item-1 {
+  overflow: hidden;
+  height: 20vw;
+  position: relative;
+}
+
+.services__item-1 .bg {
+  background-image: url(../img/services/1.jpg);
+  background-size: cover;
+  background-position: center;
+  transition: all 1s;
+  height: 100%;
+  width: 100%;
+}
+
+.services__item-1:hover .bg {
+  transform: scale(1.1);
+  transition: all 1s;
+}
+
+.services__item-1:hover .textBlock {
+  text-shadow: none;
+  color: white;
+  transition: all .5s;
+}
+
+.services__item-1:nth-child(2n+1) .layer {
+  background: rgba(131, 131, 131, 0.7);
+  color: white;
+}
+
+.services__item-1:nth-child(2n) .layer {
+  background: rgba(221, 221, 221, 0.7);
+  color: black;
+}
+
+.services__item-2 {
+  overflow: hidden;
+  height: 20vw;
+  position: relative;
+}
+
+.services__item-2 .bg {
+  background-image: url(../img/services/2.jpg);
+  background-size: cover;
+  background-position: center;
+  transition: all 1s;
+  height: 100%;
+  width: 100%;
+}
+
+.services__item-2:hover .bg {
+  transform: scale(1.1);
+  transition: all 1s;
+}
+
+.services__item-2:hover .textBlock {
+  text-shadow: none;
+  color: white;
+  transition: all .5s;
+}
+
+.services__item-2:nth-child(2n+1) .layer {
+  background: rgba(131, 131, 131, 0.7);
+  color: white;
+}
+
+.services__item-2:nth-child(2n) .layer {
+  background: rgba(221, 221, 221, 0.7);
+  color: black;
+}
+
+.services__item-3 {
+  overflow: hidden;
+  height: 20vw;
+  position: relative;
+}
+
+.services__item-3 .bg {
+  background-image: url(../img/services/3.jpg);
+  background-size: cover;
+  background-position: center;
+  transition: all 1s;
+  height: 100%;
+  width: 100%;
+}
+
+.services__item-3:hover .bg {
+  transform: scale(1.1);
+  transition: all 1s;
+}
+
+.services__item-3:hover .textBlock {
+  text-shadow: none;
+  color: white;
+  transition: all .5s;
+}
+
+.services__item-3:nth-child(2n+1) .layer {
+  background: rgba(131, 131, 131, 0.7);
+  color: white;
+}
+
+.services__item-3:nth-child(2n) .layer {
+  background: rgba(221, 221, 221, 0.7);
+  color: black;
+}
+
+.services__item-4 {
+  overflow: hidden;
+  height: 20vw;
+  position: relative;
+}
+
+.services__item-4 .bg {
+  background-image: url(../img/services/4.jpg);
+  background-size: cover;
+  background-position: center;
+  transition: all 1s;
+  height: 100%;
+  width: 100%;
+}
+
+.services__item-4:hover .bg {
+  transform: scale(1.1);
+  transition: all 1s;
+}
+
+.services__item-4:hover .textBlock {
+  text-shadow: none;
+  color: white;
+  transition: all .5s;
+}
+
+.services__item-4:nth-child(2n+1) .layer {
+  background: rgba(131, 131, 131, 0.7);
+  color: white;
+}
+
+.services__item-4:nth-child(2n) .layer {
+  background: rgba(221, 221, 221, 0.7);
+  color: black;
+}
+
+.services__item-5 {
+  overflow: hidden;
+  height: 20vw;
+  position: relative;
+}
+
+.services__item-5 .bg {
+  background-image: url(../img/services/5.jpg);
+  background-size: cover;
+  background-position: center;
+  transition: all 1s;
+  height: 100%;
+  width: 100%;
+}
+
+.services__item-5:hover .bg {
+  transform: scale(1.1);
+  transition: all 1s;
+}
+
+.services__item-5:hover .textBlock {
+  text-shadow: none;
+  color: white;
+  transition: all .5s;
+}
+
+.services__item-5:nth-child(2n+1) .layer {
+  background: rgba(131, 131, 131, 0.7);
+  color: white;
+}
+
+.services__item-5:nth-child(2n) .layer {
+  background: rgba(221, 221, 221, 0.7);
+  color: black;
+}
+
+.services__item-6 {
+  overflow: hidden;
+  height: 20vw;
+  position: relative;
+}
+
+.services__item-6 .bg {
+  background-image: url(../img/services/6.jpg);
+  background-size: cover;
+  background-position: center;
+  transition: all 1s;
+  height: 100%;
+  width: 100%;
+}
+
+.services__item-6:hover .bg {
+  transform: scale(1.1);
+  transition: all 1s;
+}
+
+.services__item-6:hover .textBlock {
+  text-shadow: none;
+  color: white;
+  transition: all .5s;
+}
+
+.services__item-6:nth-child(2n+1) .layer {
+  background: rgba(131, 131, 131, 0.7);
+  color: white;
+}
+
+.services__item-6:nth-child(2n) .layer {
+  background: rgba(221, 221, 221, 0.7);
+  color: black;
+}
+
+.services__item-7 {
+  overflow: hidden;
+  height: 20vw;
+  position: relative;
+}
+
+.services__item-7 .bg {
+  background-image: url(../img/services/7.jpg);
+  background-size: cover;
+  background-position: center;
+  transition: all 1s;
+  height: 100%;
+  width: 100%;
+}
+
+.services__item-7:hover .bg {
+  transform: scale(1.1);
+  transition: all 1s;
+}
+
+.services__item-7:hover .textBlock {
+  text-shadow: none;
+  color: white;
+  transition: all .5s;
+}
+
+.services__item-7:nth-child(2n+1) .layer {
+  background: rgba(131, 131, 131, 0.7);
+  color: white;
+}
+
+.services__item-7:nth-child(2n) .layer {
+  background: rgba(221, 221, 221, 0.7);
+  color: black;
+}
+
+.services__item-8 {
+  overflow: hidden;
+  height: 20vw;
+  position: relative;
+}
+
+.services__item-8 .bg {
+  background-image: url(../img/services/8.jpg);
+  background-size: cover;
+  background-position: center;
+  transition: all 1s;
+  height: 100%;
+  width: 100%;
+}
+
+.services__item-8:hover .bg {
+  transform: scale(1.1);
+  transition: all 1s;
+}
+
+.services__item-8:hover .textBlock {
+  text-shadow: none;
+  color: white;
+  transition: all .5s;
+}
+
+.services__item-8:nth-child(2n+1) .layer {
+  background: rgba(131, 131, 131, 0.7);
+  color: white;
+}
+
+.services__item-8:nth-child(2n) .layer {
+  background: rgba(221, 221, 221, 0.7);
+  color: black;
+}
+
+.services .layer {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.services .layer:hover {
+  background: rgba(86, 126, 105, 0.7);
+  transition: background-color 1s;
+}
+
+.services .textBlock {
+  font-size: 20px;
+  transition: all .5s;
+}
+
+.footer {
+  background-color: #1EC26D;
+}
+
+.footer a {
+  text-decoration: none;
+  color: white;
+}
