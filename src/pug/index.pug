@@ -1,0 +1,66 @@
+doctype html
+html(lang="ru")
+	head
+		meta(charset='utf-8')
+		meta(http-equiv='X-UA-Compatible', content='IE=edge')
+		meta(name='viewport', content='width=device-width, initial-scale=1')
+
+		meta(name='description' content='«Є-Розстрочка» є однією з провідних фінансових компаній на ринку України, яка надає фінансові послуги фізичним та юридичним особам')
+		meta(name='keywords' content='є-розстрочка, Розстрочка, факторинг, кредитування, викуп активів, викуп кредитів, aдміністрування заборгованості, погашення заборгованості, кредит, викупити кредит, погасити кредит, прострочена заборгованість, контроль заборгованості, колекторські послуги, колектор, стягнення боргів, управління заборгованістю')
+		meta(name='theme-color' content='#1EC26D')
+		meta(name='author' content='Стас Погребняков')
+
+		link(rel='canonical' href='...')
+		
+		meta(property='og:locale' content='ru_RU')
+		meta(property='og:type' content='website')
+		meta(property='og:title' content='Util-Company')
+		meta(property='og:description' content='...')
+		meta(property='og:image' content='./img/icons/logo.PNG')
+		meta(property='og:url' content='...')
+		meta(property='og:site_name' content='Util-Company')
+		meta(name='twitter:card' content='summary')
+		meta(name='twitter:title' content='Util-Company')
+		meta(name='twitter:description' content='...')
+		meta(name='twitter:image' content='./img/icons/logo.PNG')
+
+		link(rel="stylesheet", href="css/style.css")
+		link(rel="shortcut icon", href="img/favicon.ico", type="image/x-icon")
+		title Util-Company
+
+		script(src='./plugins/wow/wow.min.js')
+		script.
+			new WOW().init();
+			
+	body
+		.wrapper
+			.container-fluid
+				.row
+					#carousel.carousel.slide.carousel-fade(data-ride='carousel')
+						.carousel-inner
+							include ./_header
+							.carousel__text.d-flex.justify-content-center.align-items-center.text-center.flex-column.p-2
+								h1 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum, necessitatibus.
+								p Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat libero expedita omnis laudantium saepe, impedit eius. Molestias sint, fugiat eaque numquam praesentium tempore architecto. Minus molestiae sapiente impedit ipsa ab hic saepe sint nam. Delectus, voluptatem inventore similique praesentium ea doloremque maxime repellendus nobis odit. Tempore officiis dignissimos atque at. Excepturi voluptatum ipsum deserunt neque quibusdam ipsam quas totam quae.
+							.carousel-item.active(data-interval="5000")
+								img.d-block.w-100(src='./img/slider/1.jpg' alt='')
+							.carousel-item(data-interval="5000")
+								img.d-block.w-100(src='./img/slider/2.jpg' alt='')
+							.carousel-item(data-interval="5000")
+								img.d-block.w-100(src='./img/slider/3.jpg' alt='')
+
+			.container-xl.px-1.py-5
+				.col-12.text-justify
+					p Живя в эпоху стремительного развития, когда все растет и приумножается. Мы с Вами в результате своей жизнедеятельности оставляем множество мусора. Для обычного, бытового мусора по всему Киеву на каждом углу есть урны или мусорные баки, куда с легкостью можем выбросить отходы.
+
+					p А вот мы задумались о ремонте в своей квартире, доме, даче или гараже и что дальше? После демонтажа остается куча строительного мусора, который мы не можем просто выбросить в мусорный бак. И тогда мы ищем, куда его деть. На городскую свалку отвезти, но население туда не пускаю без пропуска. Да и машину нужно подходящую найти для данной перевозки. И тогда Вы можете обратиться к нам. Команда профессиональных водителей со своими машинами и грузчиков, которые с легкостью помогут Вам с утилизацией строй мусора.
+
+			include ./_services
+			include ./_benefits
+			include ./_footer
+
+
+		script(src='./js/jquery.min.js')
+		script(src='./plugins/bootstrap/popper.min.js')
+		script(src='../plugins/bootstrap/bootstrap.min.js')
+		script(src='js/main.js')
